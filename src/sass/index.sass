@@ -1,0 +1,136 @@
+$text-primary: whitesmoke
+$text-secondary: rgba(245, 245, 245, .8)
+$background-primary: #222
+$background-secondary: #111
+$border: 1px solid rgba(245, 245, 245, .5)
+$border-brighten: 1px solid rgba(245, 245, 245, .9)
+$border-darken: 1px solid rgba(245, 245, 245, .2)
+
+body
+    min-height: calc(100vh - 15vh)
+    margin-top: 15vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: $text-primary
+    background-color: $background-primary
+
+h1
+    color: $text-primary
+
+main
+    text-align: center
+    padding: 0 15px
+
+    h1
+        margin-bottom: 5vh
+
+    #password-output
+        padding: 5px 0px
+        border: $border
+        border-radius: 20px
+        font-family: monospace
+        font-size: 1.3em
+        cursor: pointer
+        transition: .4s
+        background-color: $background-secondary
+
+        &:hover
+            border: $border-brighten
+
+        &:active
+            opacity: .8
+
+#button-container
+    button
+        margin: 0 5px
+
+        &:active
+            opacity: .8
+    
+        i
+            margin-left: 5px
+
+#options-container
+    margin-top: 5vh
+
+    label
+        padding: 0 13px 0 10px
+
+        &:last-child
+            padding-right: 0
+
+    label,
+    input[type="text"]
+        display: inline
+
+    #password-length-output
+        margin-right: -10px
+        display: inline-block
+
+    #password-length-output
+        padding: 0 3px
+
+#clear-history-container
+    width: 280px
+    margin: auto
+    margin: 5vh auto 1.5vh
+    padding-bottom: 10px
+    border-bottom: $border-darken
+    text-align: right
+    cursor: pointer
+    transition: .4s
+
+    #clear-history-btn
+        i
+            display: inline-block
+            margin: 0 8px
+
+        i,
+        span
+            transition: .4s
+
+        i,
+        &:hover > span
+            color: crimson
+
+#history-container
+    margin: auto
+
+    .history-item
+        width: 260px
+        color: $text-secondary
+        display: inline-flex
+        justify-content: space-between
+        padding: 5px 10px
+        border-radius: 10px
+        transition: .4s
+        cursor: pointer
+
+        i
+            line-height: unset
+
+        &:hover
+            background-color: $background-secondary
+            color: $text-primary
+        
+        &:hover > .fa-copy
+            transition: .4s
+            opacity: .5
+
+#notification
+    position: absolute
+    top: 20px
+    right: 20px
+    width: 250px
+    padding: 10px
+    border: $border-darken
+    border-radius: 10px
+    text-align: center
+    background-color: $background-secondary
+    opacity: 0
+    transition: .4s
+
+
+    p
+        margin: 0

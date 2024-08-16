@@ -1,0 +1,13 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "main": "dist/js/index.js",
+  "author": "nazarja",
+  "license": "MIT",
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.77.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
