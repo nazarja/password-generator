@@ -5,9 +5,18 @@
   "author": "nazarja",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
     "pug-cli": "^1.0.0-alpha6",
+    "rollup": "^4.20.0",
     "sass": "^1.77.8",
     "ts-node": "^10.9.2",
+    "tslib": "^2.6.3",
     "typescript": "^5.5.4"
-  }
+  },
+  "dependencies": {
+    "select-by": "^1.0.1"
+  },
+  "type": "module"
 }

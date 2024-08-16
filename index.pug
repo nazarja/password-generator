@@ -42,7 +42,7 @@ html(lang=en)
                     label(for="password-length-output") Length
                         span#password-length-output (12)
 
-                    input(type="range" id="password-length" min="8" max="20" value="12")
+                    input(type="range" id="password-length-input" min="8" max="20" value="12")
 
                 div#clear-history-container
                     div#clear-history-btn 
@@ -59,4 +59,4 @@ html(lang=en)
                         br
 
         script(src="https://cdn.jsdelivr.net/npm/select-by@1.0.1/dist/select-by.min.js")
-        script(src="./dist/js/index.js")
+        script(src="./dist/js/index.js" type="module")
