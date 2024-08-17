@@ -16,7 +16,7 @@ html(lang=en)
         main
             div 
                 h1 Password Generator
-                p#password-output test
+                p#password-output
 
             div#button-container 
                 button#generate-password-btn.button-primary Generate 
@@ -51,12 +51,7 @@ html(lang=en)
                 
                 div#history-container
                     ul#history-list
-                        li.history-item 
-                            span.history-item-number 1.
-                            span.history-password 123456
-                            i.fa-regular.fa-copy
-
-                        br
+                        
 
         script(src="https://cdn.jsdelivr.net/npm/select-by@1.0.1/dist/select-by.min.js")
         script(src="./dist/js/index.js" type="module")

@@ -88,6 +88,9 @@ main #password-output:active {
 #clear-history-container #clear-history-btn i, #clear-history-container #clear-history-btn:hover > span {
   color: crimson;
 }
+#clear-history-container #clear-history-btn:hover > .fa-trash {
+  color: #880808;
+}
 
 #history-container {
   margin: auto;
